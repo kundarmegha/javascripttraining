@@ -1,0 +1,76 @@
+.modernist {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    color: white;
+    font-size: 35px;
+}
+
+.modernist-side {
+    position: relative;
+    margin-left: 22px;
+    top: 50px;
+    color: white;
+    font-size: 20px;
+    text-align: left;
+    display: block;
+}
+
+.ul {
+    position: relative;
+    display: inline-block;
+    color: white;
+    left: 50px;
+    margin-left: 400px;
+}
+
+li {
+    display: inline;
+    border:2px solid transparent;
+    padding: 20px 20px;
+    font-size: 20px;
+}
+li:hover{
+    background-color: rgb(17, 212, 17);
+    border:2px solid transparent;
+    border-radius: 100px;
+    padding: 20px 20px;
+}
+.btn:hover{
+    color:white;
+}
+.paraleft {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 200px;
+}
+
+.parahead {
+    color: white;
+    font-size: 35px;
+    max-width: 250px;
+}
+
+.btn {
+    margin-top: 26px;
+    background-color: rgb(40, 185, 40);
+    color: white;
+    height: 50px;
+    border:2px solid transparent;
+    border-radius: 1000px;
+}
+
+.parap1 {
+    color: white;
+    max-width: 400px;
+}
+
+.paraimg {
+    position: absolute;
+    margin-left: 790px;
+    margin-top: 180px;
+    height: 300px;
+    width: 400px;
+    border: 10px solid rgb(90, 86, 86);
+    border-radius: 50%;
+}
