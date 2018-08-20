@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>weather Info</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/weather.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/weather.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<!-- On page load the function weather() is called -->
+
+<body onload="weather()">
+
+    <main>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- This will show the aside part of the web page which tells the current day weather -->
+                <div class="col-xs-4 col-md-4 info-display">
+
+                    <!-- this is the first row used to display the today's day -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <center class="text-uppercase">
+
+                                <!-- this text is used to display the message to the client -->
+                                <h2 id="day" style="color:white;"></h2>
+
+                            </center>
+                        </div>
+                    </div>
+
+                    <!-- This is used to display the weather condition for today -->
+                    <div class="row">
+                        <div class="col-md-12 div1">
+                            <!-- this is used to display the weather image of today -->
+                            <div class="center" id="image1" style="margin-left:105px;"></div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12>
+                            <!-- this is used to display the higher n lower weather temperature -->
+                            <center class=" text-uppercase " style="color:white;font-size:30px;text-align:center; ">
+                                    <span id="higher"></span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <span id="lower"></span>
+                            </center>
+
+                        </div>
+                    </div>
+
+                </div>
+        <!-- this column is used for displaying the weather condition and to specify loaction -->
+                <div class="col-xs-8 col-md-8 location-info ">
+
+                    <div class="row ">
+                        <div class="col-xs-12 col-md-12 info-cont ">
+                            <!-- displays the message according to time -->
+                            <h2 id="message"></h2>
+                            <!-- this is used to select the location  -->
+                           <select name="loaction" id="location-select" onchange="weather() ">
+                               <option value="Bangalore ">Bangalore</option>
+                               <option value="Delhi ">Delhi</option>
+                               <option value="Kolkatta ">Kolkatta</option>
+                               <option value="Mangalore ">Mangalore</option>
+                               <option value="Chennai">Chennai</option>
+                           </select>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+          <!-- other days information about the weather condition -->
+            <div class="row ">
+
+                <div class="col-xs-2 col-md-2 ">
+
+                    <!-- this is used to display the next day -->
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <center class="text-uppercase ">
+                                <h2 id="day1" style="color:blue; "></h2>
+                            </center>
+                        </div>
+                    </div>
+                    <!-- this is used to display the next image -->
+                    <div class="row ">
+                        <div class="col-md-12 div2 ">
+                            <div id="image2"></div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <!-- higher n lower temparture -->
+                            <center style="color:rgba(13, 92, 211, 0.808); ">
+                            <span id="higher1"></span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span id="lower1"></span>
+                        </center>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-2 col-md-2 ">
+                 <!-- this is used to display the next day  -->
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <center class="text-uppercase ">
+                                <h2 id="day2" style="color:blue; "></h2>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!-- this is used to display the image of weather condition -->
+                    <div class="row ">
+                        <div class="col-md-12 div2 ">
+                            <div id="image3"></div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <!-- higher n lower temperature -->
+                            <center style="color:rgba(13, 92, 211, 0.808); ">
+                            <span id="higher2"></span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span id="lower2"></span>
+                        </center>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-2 col-md-2 ">
+
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                             <!-- this is used to display the next day  -->
+                            <center class="text-uppercase ">
+                                <h2 id="day3" style="color:blue; "></h2>
+                            </center>
+                        </div>
+                    </div>
+                <!-- this is used to display the image of weather condition -->
+                    <div class="row ">
+                        <div class="col-md-12 div2 ">
+                            <div id="image4"></div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                              <!-- higher n lower temparture -->
+                            <center style="color:rgba(13, 92, 211, 0.808); ">
+                            <span id="higher3"></span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span id="lower3"></span>
+                            </center>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-2 col-md-2 ">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                             <!-- this is used to display the next day  -->
+                            <center class="text-uppercase ">
+                                <h2 id="day4" style="color:blue; "></h2>
+                            </center>
+                        </div>
+                    </div>
+
+                     <!-- this is used to display the image of weather condition -->
+                    <div class="row ">
+                        <div class="col-md-12 div2 ">
+                            <div id="image5"></div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-12">
+                              <!-- higher n lower temparture -->
+                            <center style="color:rgba(13, 92, 211, 0.808); ">
+                            <span id="higher4"></span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
+                            <span id="lower4"></span>
+                            </center>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-2 col-md-2 ">
+
+                    <div class="row">
+                        <div class="col-md-12 ">
+                             <!-- this is used to display the next day  -->
+                            <center class="text-uppercase ">
+                                <h2 id="day5" style="color:blue; "></h2>
+                            </center>
+                        </div>
+                    </div>
+
+                        <!-- this is used to display the image of weather condition -->
+                    <div class="row">
+                        <div class="col-md-12 div2">
+                            <div id="image6"></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                              <!-- higher n lower temparture -->
+                            <center style="color:rgba(13, 92, 211, 0.808); ">
+                            <span id="higher5"></span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span id="lower5"></span>
+                        </center>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-xs-2 col-md-2 ">
+
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <center class="text-uppercase ">
+                                 <!-- this is used to display the next day  -->
+                                <h2 id="day6" style="color:blue; "></h2>
+                            </center>
+                        </div>
+                    </div>
+                   
+                       <!-- this is used to display the image of weather condition -->
+                    <div class="row ">
+                        <div class="col-md-12 div2">
+                            <div  id="image7"></div>
+                        </div>
+                    </div>
+
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                              <!-- higher n lower temparture -->
+                            <center style="color:rgba(13, 92, 211, 0.808); ">
+                            <span id="higher6"></span>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span id="lower6"></span>
+                        </center>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="js/weather.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+</body>
+
+</html>

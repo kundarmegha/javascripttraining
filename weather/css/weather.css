@@ -1,0 +1,105 @@
+/* this is used to display the blue background */
+.info-display {
+    background-color: blue;
+    height: 430px;
+}
+
+/* this used to display the bg as image */
+.location-info {
+    background: url("../images/display.jpeg");
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.info-cont h2 {
+    color: blue;
+}
+
+.info-cont h1 {
+    color: blue;
+    font-weight: bold;
+}
+
+.div1 {
+    height: 200px;
+    align-items: center;
+}
+.div2{
+    height:150px;
+    align-items: center;
+}
+
+/* sunny image cropped */
+.image1{
+    margin-left:120px;
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 7% 12%;
+}
+/* sunny with cloud image cropped */
+.image2{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 37% 12%;
+}
+/* cloud with sunny cropped image */
+.image3{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 65% 12%;
+}
+/* cloudy */
+.image4{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 94% 12%;
+}
+/* cold condition */
+.image5{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 5% 50%;
+}
+/* windy */
+.image6{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 36% 50%;
+}
+/* breezy */
+.image7{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 65% 50%;
+}
+/* sunny with rainy */
+.image8{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 94% 50%;
+}
+/* rainy */
+.image9{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 132% 83%;
+}
+/* rainy with cloud */
+.image10{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 162% 88%;
+}
+/* thunder strom */
+.image11{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 192% 88%;
+}
+/* raining */
+.image12{
+    width: 172px;
+    height: 114px;
+    background: url(../images/weather.jpg) 222% 88%;
+}
